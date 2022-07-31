@@ -1,0 +1,1 @@
+/home/rando_mane/.zshrc
