@@ -46,16 +46,25 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+m exec alacritty -e tmux new -s Mane -n Terminator
+bindsym $mod+a exec alacritty -e tmux new -s Audi -n Terminator
+bindsym $mod+r exec alacritty -e tmux new -s Reefer -n Terminator
+bindsym $mod+b exec alacritty -e tmux new -s Background -n Terminator
+
+bindsym $mod+Shift+m exec alacritty -e tmux a -t Mane
+bindsym $mod+Shift+a exec alacritty -e tmux a -t Audi
+bindsym $mod+Shift+r exec alacritty -e tmux a -t Reefer
+bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
 
 bindsym $mod+Shift+Return exec nautilus
 
-bindsym $mod+b exec brave --incognito
+bindsym $mod+i exec brave --incognito
 
 bindsym $mod+z exec gnome-control-center
 
 bindsym $mod+c exec code
 
-bindsym $mod+m exec spotify
+bindsym $mod+s exec spotify
 
 bindsym $mod+g exec google-chrome
 
@@ -99,17 +108,17 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+b split h
+bindsym $mod+Shift+e split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Shift+w split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+w layout stacking
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -119,7 +128,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Shift+p focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -164,9 +173,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+v restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -190,10 +199,10 @@ mode "resize" {
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        bindsym $mod+Shift+z mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+x mode "resize"
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
