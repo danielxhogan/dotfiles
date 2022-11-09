@@ -45,16 +45,16 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+m exec alacritty -e tmux new -s Mane -n Terminator
-bindsym $mod+a exec alacritty -e tmux new -s Audi -n Terminator
-bindsym $mod+r exec alacritty -e tmux new -s Reefer -n Terminator
-bindsym $mod+b exec alacritty -e tmux new -s Background -n Terminator
+bindsym $mod+Return exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty'
+bindsym $mod+m exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux new -s Mane -n Terminator'
+bindsym $mod+a exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux new -s Audi -n Terminator'
+bindsym $mod+r exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux new -s Reefer -n Terminator'
+bindsym $mod+b exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux new -s Background -n Terminator'
 
-bindsym $mod+Shift+m exec alacritty -e tmux a -t Mane
-bindsym $mod+Shift+a exec alacritty -e tmux a -t Audi
-bindsym $mod+Shift+r exec alacritty -e tmux a -t Reefer
-bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
+bindsym $mod+Shift+m exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux a -t Mane'
+bindsym $mod+Shift+a exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux a -t Audi'
+bindsym $mod+Shift+r exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux a -t Reefer'
+bindsym $mod+Shift+b exec MESA_LOADER_DRIVER_OVERRIDE=i965 bash -c 'alacritty -e tmux a -t Background'
 
 bindsym $mod+Shift+Return exec nautilus
 
@@ -108,10 +108,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+e split h
+bindsym $mod+Shift+w split h
 
 # split in vertical orientation
-bindsym $mod+Shift+w split v
+bindsym $mod+Shift+e split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
