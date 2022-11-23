@@ -1,0 +1,38 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.background": "#000b1e",
+        "editorLineNumber.activeForeground": "#5A8F7B",
+        "editorLineNumber.foreground": "#5A8F7B",
+        "editorCursor.background": "#000b1e",
+        "editorCursor.foreground": "#0abdc6",
+
+        "terminal.background":"#000b1e",
+        "terminal.foreground":"#5A8F7B",
+        "terminal.ansiBlack":"#123e7c",
+        "terminal.ansiBrightBlack":"#1c61c2",
+        "terminal.ansiBrightBlue":"#0abdc6",
+        "terminal.ansiBrightCyan":"#18978F",
+        "terminal.ansiBrightGreen":"#7A4069",
+        "terminal.ansiBrightMagenta":"#7A4069",
+        "terminal.ansiBrightRed":"#ff0000",
+        "terminal.ansiBrightWhite":"#d7d7d5",
+        "terminal.ansiBrightYellow":"#A10035",
+        "terminal.ansiBlue":"#18978F",
+        "terminal.ansiCyan":"#0abdc6",
+        "terminal.ansiGreen":"#7A4069",
+        "terminal.ansiMagenta":"#7A4069",
+        "terminal.ansiRed":"#ff0000",
+        "terminal.ansiWhite":"#d7d7d5",
+        "terminal.ansiYellow":"#EF5B0C"
+    },
+
+    "workbench.colorTheme": "Monokai Dimmed",
+
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 5,
+    "editor.cursorBlinking": "solid",
+
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.cursorStylePerMode.replace": "block"
+}
