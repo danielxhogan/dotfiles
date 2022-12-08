@@ -30,7 +30,7 @@
         "terminal.ansiYellow":"#EF5B0C"
     },
 
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
 
     "editor.lineNumbers": "relative",
     "editor.cursorSurroundingLines": 5,
