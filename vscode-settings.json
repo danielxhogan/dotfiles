@@ -1,5 +1,9 @@
 {
     "workbench.colorCustomizations": {
+        "sideBar.background": "#000b1e",
+        "sideBar.foreground": "#5A8F7B",
+        "sideBarSectionHeader.background": "#000b1e",
+        "sideBar.border": "#7A4069",
         "editor.background": "#000b1e",
         "editorLineNumber.activeForeground": "#5A8F7B",
         "editorLineNumber.foreground": "#5A8F7B",
