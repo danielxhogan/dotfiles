@@ -1,0 +1,3 @@
+set relativenumber
+set nu
+set scrolloff=5
