@@ -191,7 +191,7 @@ colors:
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
     text:   "0x000b1e"  # deep blue
-    cursor: "0x0abdc6"  # neon blue
+    cursor: "0x34e2e2"  # neon blue
 
   # Normal colors
   normal:
@@ -201,7 +201,7 @@ colors:
     yellow:  "0xEF5B0C"  # orange
     blue:    "0x18978F"  # turquoise
     magenta: "0x7A4069"  # primary purple
-    cyan:    "0x0abdc6"  # neon blue
+    cyan:    "0x34e2e2"  # neon blue
     white:   "0xd7d7d5"  # light gray
 
   # Bright colors
@@ -210,7 +210,7 @@ colors:
     red:     "0xff0000"  # danger red
     green:   "0x7A4069"  # primary purple
     yellow:  "0xA10035"  # pink red
-    blue:    "0x0abdc6"  # neon blue
+    blue:    "0x34e2e2"  # neon blue
     magenta: "0x7A4069"  # primary purple
     cyan:    "0x18978F"  # turquoise
     white:   "0xd7d7d5"  # light gray
