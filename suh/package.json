@@ -1,0 +1,21 @@
+{
+  "name": "suh",
+  "displayName": "suh",
+  "description": "dude, suh",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "suh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/suh-color-theme.json"
+      }
+    ]
+  }
+}

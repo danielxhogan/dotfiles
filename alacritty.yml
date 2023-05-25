@@ -202,7 +202,7 @@ colors:
     blue:    "0x18978F"  # turquoise
     magenta: "0x7A4069"  # primary purple
     cyan:    "0x34e2e2"  # neon blue
-    white:   "0xd7d7d5"  # light gray
+    white:   "0xd7d7d5"  # light gray #c0c0c0 silver
 
   # Bright colors
   bright:
