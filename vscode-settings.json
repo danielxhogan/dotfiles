@@ -1,42 +1,77 @@
 {
-    "workbench.colorCustomizations": {
-        "sideBar.background": "#000b1e",
-        "sideBar.foreground": "#5A8F7B",
-        "sideBarSectionHeader.background": "#000b1e",
-        "sideBar.border": "#7A4069",
-        "editor.background": "#000b1e",
-        "editorLineNumber.activeForeground": "#5A8F7B",
-        "editorLineNumber.foreground": "#5A8F7B",
-        "editorCursor.background": "#000b1e",
-        "editorCursor.foreground": "#34e2e2",
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "liveSassCompile.settings.excludeList": [
 
-        "terminal.background":"#000b1e",
-        "terminal.foreground":"#5A8F7B",
-        "terminal.ansiBlack":"#123e7c",
-        "terminal.ansiBrightBlack":"#1c61c2",
-        "terminal.ansiBrightBlue":"#34e2e2",
-        "terminal.ansiBrightCyan":"#18978F",
-        "terminal.ansiBrightGreen":"#7A4069",
-        "terminal.ansiBrightMagenta":"#7A4069",
-        "terminal.ansiBrightRed":"#ff0000",
-        "terminal.ansiBrightWhite":"#d7d7d5",
-        "terminal.ansiBrightYellow":"#A10035",
-        "terminal.ansiBlue":"#18978F",
-        "terminal.ansiCyan":"#34e2e2",
-        "terminal.ansiGreen":"#7A4069",
-        "terminal.ansiMagenta":"#7A4069",
-        "terminal.ansiRed":"#ff0000",
-        "terminal.ansiWhite":"#d7d7d5",
-        "terminal.ansiYellow":"#EF5B0C"
-    },
+  //     "**/node_modules/**",
+  //     ".vscode/**"
+  // ],
+  // "liveSassCompile.settings.formats": [
+  //     {
+  //         "format": "compressed",
+  //         "savePath": "/styles/css"
+  //     }
+  // ],
+  // "liveSassCompile.settings.generateMap": false,
+  // "liveSassCompile.settings.autoprefix": [],
 
-    "workbench.colorTheme": "Gruvbox Dark Soft",
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#000b1e",
+    "sideBar.foreground": "#5A8F7B",
+    "sideBarSectionHeader.background": "#000b1e",
+    "sideBar.border": "#7A4069",
+    "editor.background": "#000b1e",
+    "editorLineNumber.activeForeground": "#ff69b4",
+    "editorLineNumber.foreground": "#18978f",
+    "editorCursor.background": "#000b1e",
+    "editorCursor.foreground": "#34e2e2",
 
-    "editor.lineNumbers": "relative",
-    "editor.cursorSurroundingLines": 5,
-    "editor.cursorBlinking": "solid",
+    "terminal.background": "#000b1e",
+    "terminal.foreground": "#5A8F7B",
+    "terminal.ansiBlack": "#123e7c",
+    "terminal.ansiBrightBlack": "#1c61c2",
+    "terminal.ansiBrightBlue": "#34e2e2",
+    "terminal.ansiBrightCyan": "#18978F",
+    "terminal.ansiBrightGreen": "#7A4069",
+    "terminal.ansiBrightMagenta": "#7A4069",
+    "terminal.ansiBrightRed": "#ff0000",
+    "terminal.ansiBrightWhite": "#d7d7d5",
+    "terminal.ansiBrightYellow": "#A10035",
+    "terminal.ansiBlue": "#18978F",
+    "terminal.ansiCyan": "#34e2e2",
+    "terminal.ansiGreen": "#7A4069",
+    "terminal.ansiMagenta": "#7A4069",
+    "terminal.ansiRed": "#ff0000",
+    "terminal.ansiWhite": "#d7d7d5",
+    "terminal.ansiYellow": "#EF5B0C"
+  },
 
-    "vim.cursorStylePerMode.normal": "block",
-    "vim.cursorStylePerMode.insert": "block",
-    "vim.cursorStylePerMode.replace": "block"
+  "workbench.colorTheme": "suh",
+
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorBlinking": "solid",
+
+  "vim.cursorStylePerMode.normal": "block",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.preferredHighContrastColorTheme": "Abyss",
+  "workbench.preferredDarkColorTheme": "Abyss",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
 }
+
