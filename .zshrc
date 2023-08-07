@@ -73,6 +73,8 @@ ZSH_THEME="afowler"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 # User configuration
 
@@ -99,6 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls="exa"
+alias ll="exa -l"
+alias la="exa -la"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
