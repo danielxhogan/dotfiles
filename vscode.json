@@ -1,19 +1,6 @@
 {
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  // "liveSassCompile.settings.excludeList": [
-
-  //     "**/node_modules/**",
-  //     ".vscode/**"
-  // ],
-  // "liveSassCompile.settings.formats": [
-  //     {
-  //         "format": "compressed",
-  //         "savePath": "/styles/css"
-  //     }
-  // ],
-  // "liveSassCompile.settings.generateMap": false,
-  // "liveSassCompile.settings.autoprefix": [],
 
   "workbench.colorCustomizations": {
     "sideBar.background": "#000b1e",
@@ -49,7 +36,7 @@
   "workbench.colorTheme": "suh",
 
   "editor.lineNumbers": "relative",
-  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLines": 10,
   "editor.cursorBlinking": "solid",
 
   "vim.cursorStylePerMode.normal": "block",
@@ -74,4 +61,3 @@
   },
   "editor.formatOnSave": true
 }
-
