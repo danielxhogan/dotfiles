@@ -36,7 +36,7 @@
   "workbench.colorTheme": "suh",
 
   "editor.lineNumbers": "relative",
-  "editor.cursorSurroundingLines": 10,
+  "editor.cursorSurroundingLines": 5,
   "editor.cursorBlinking": "solid",
 
   "vim.cursorStylePerMode.normal": "block",
