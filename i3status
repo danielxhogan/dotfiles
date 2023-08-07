@@ -1,0 +1,38 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 5
+}
+
+order += "volume master"
+order += "cpu_temperature 0"
+order += "memory"
+order += "disk /"
+order += "tztime local"
+
+volume master {
+        format = "666 Hail Satan!!!                            vol: %volume"
+        format_muted = "vol: muted (%volume)"
+        device = "pulse:alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2"
+}
+
+cpu_temperature 0 {
+        format = "cpu: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp2_input"
+}
+
+memory {
+        format = "ram: %available"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+disk "/" {
+        format = "disk: %avail"
+}
+
+tztime local {
+        format = "%h %d %Y  x  %I:%M %p "
+}
+
+# ♪
