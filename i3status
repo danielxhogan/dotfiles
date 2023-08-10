@@ -8,10 +8,11 @@ order += "volume master"
 order += "cpu_temperature 0"
 order += "memory"
 order += "disk /"
-order += "tztime local"
+order += "tztime 1"
+order += "tztime 2"
 
 volume master {
-        format = "Vought Lied, People Died!                         %volume"
+        format = "Vought Lied, People Died!                          %volume"
         format_muted = " (%volume)"
         device = "pulse:alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2"
 }
@@ -31,8 +32,10 @@ disk "/" {
         format = " %avail"
 }
 
-tztime local {
-        format = " %h %d %Y  x   %I:%M %p "
+tztime 1 {
+        format = " %h %d %Y"
 }
 
-# ♪
+tztime 2 {
+        format = " %I:%M %p "
+}
