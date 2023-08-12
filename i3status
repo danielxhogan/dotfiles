@@ -12,7 +12,7 @@ order += "tztime 1"
 order += "tztime 2"
 
 volume master {
-        format = "Vought Lied, People Died!                          %volume"
+        format = "Vought Lied, People Died!                       %volume"
         format_muted = " (%volume)"
         device = "pulse:alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2"
 }
