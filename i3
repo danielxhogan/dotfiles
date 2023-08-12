@@ -72,10 +72,10 @@ default_border pixel 5
 font pango:monospace 14
 
 # set some nice colors      border             background       text
-client.focused              $deepred           $deepred         $neonblue
-client.unfocused            $background        $background      $neonblue
+client.focused              $turquoise         $deepred         $background
+client.unfocused            $background        $background      $green
 client.focused_inactive     $turquoise         $turquoise       $lightpink
-client.urgent               $deepred           $deepred         $background
+client.urgent               $orange            $orange          $background
 
 # i3bar
 bar {
@@ -89,9 +89,9 @@ bar {
                 separator $orange
 
                 #                       border          background      text
-                focused_workspace       $green          $background     $hotpink
-                inactive_workspace      $background     $background     $turquoise
-                urgent_workspace        $deepred        $deepred        $neonblue
+                focused_workspace       $lightpink      $lightpink      $background
+                inactive_workspace      $background     $background     $green
+                urgent_workspace        $background     $orange         $background
         }
 }
 
