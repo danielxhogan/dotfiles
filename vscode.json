@@ -1,17 +1,36 @@
 {
+  "workbench.colorTheme": "suh",
+  "editor.bracketPairColorization.enabled": false,
   "editor.tabSize": 4,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorBlinking": "solid",
+  // "vim.cursorStylePerMode.normal": "block",
 
   "workbench.colorCustomizations": {
+    "activityBar.background": "#000b1e",
+    "activityBar.border": "#A10035",
+    "activityBar.inactiveForeground": "#18978f",
+    "activityBar.activeBackground": "#A10035",
+    "activityBar.activeBorder": "#A10035",
+
     "sideBar.background": "#000b1e",
     "sideBar.foreground": "#5A8F7B",
     "sideBarSectionHeader.background": "#000b1e",
-    "sideBar.border": "#7A4069",
+    "sideBar.border": "#A10035",
+
+    "editorGroupHeader.tabsBackground": "#000b1e",
+    "tab.inactiveBackground": "#000b1e",
+    "tab.activeBorder": "#ffc0cb",
+    "breadcrumb.foreground": "#5A8F7B",
+    "statusBar.background": "#A10035",
+    "statusBar.foreground": "#000b1e",
+
     "editor.background": "#000b1e",
+    "editorCursor.foreground": "#34e2e2",
     "editorLineNumber.activeForeground": "#ff69b4",
     "editorLineNumber.foreground": "#18978f",
     "editorCursor.background": "#000b1e",
-    "editorCursor.foreground": "#34e2e2",
 
     "terminal.background": "#000b1e",
     "terminal.foreground": "#5A8F7B",
@@ -21,30 +40,20 @@
     "terminal.ansiBrightCyan": "#18978F",
     "terminal.ansiBrightGreen": "#7A4069",
     "terminal.ansiBrightMagenta": "#7A4069",
-    "terminal.ansiBrightRed": "#ff0000",
+    "terminal.ansiBrightRed": "#A10035",
     "terminal.ansiBrightWhite": "#d7d7d5",
-    "terminal.ansiBrightYellow": "#A10035",
+    "terminal.ansiBrightYellow": "#EF5B0C",
     "terminal.ansiBlue": "#18978F",
     "terminal.ansiCyan": "#34e2e2",
     "terminal.ansiGreen": "#7A4069",
     "terminal.ansiMagenta": "#7A4069",
-    "terminal.ansiRed": "#ff0000",
+    "terminal.ansiRed": "#A10035",
     "terminal.ansiWhite": "#d7d7d5",
     "terminal.ansiYellow": "#EF5B0C"
   },
 
-  "workbench.colorTheme": "suh",
-
-  "editor.lineNumbers": "relative",
-  "editor.cursorSurroundingLines": 5,
-  "editor.cursorBlinking": "solid",
-
-  "vim.cursorStylePerMode.normal": "block",
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.preferredHighContrastColorTheme": "Abyss",
-  "workbench.preferredDarkColorTheme": "Abyss",
-  "editor.bracketPairColorization.enabled": false,
-  "editor.inlayHints.enabled": "offUnlessPressed",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
@@ -59,6 +68,11 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
-  "debug.allowBreakpointsEverywhere": true
+
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "debug.allowBreakpointsEverywhere": true,
+
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.preferredHighContrastColorTheme": "Abyss",
+  "workbench.preferredDarkColorTheme": "Abyss"
 }
