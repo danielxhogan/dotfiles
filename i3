@@ -39,11 +39,6 @@ bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
 
 # app shortcuts
 bindsym $mod+c exec code
-
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+s exec gnome-control-center
-bindsym $mod+a exec nautilus
-
 bindsym $mod+g exec google-chrome
 
 bindsym $mod+y exec slack
@@ -52,6 +47,9 @@ bindsym $mod+i exec discord
 bindsym $mod+o exec brave --incognito
 bindsym $mod+p exec postman
 
+bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+s exec gnome-control-center
+bindsym $mod+a exec nautilus
 
 # kill focused window
 bindsym $mod+q kill
