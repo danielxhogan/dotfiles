@@ -64,6 +64,7 @@ set $orange #ef5b0c
 set $lightpink #ffc0cb
 set $hotpink #ff69b4
 set $neonblue #34e2e2
+set $white #d7d7d5
 
 # borders
 default_border pixel 5
