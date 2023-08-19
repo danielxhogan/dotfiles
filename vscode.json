@@ -8,16 +8,31 @@
   // "vim.cursorStylePerMode.normal": "block",
 
   "workbench.colorCustomizations": {
+    "focusBorder": "#ffc0cb",
+    "list.activeSelectionBackground": "#000b1e",
+    "list.activeSelectionForeground": "#ffc0cb",
+
+    "icon.foreground": "#ffc0cb",
+    "list.inactiveSelectionForeground": "#ffc0cb",
+    "list.errorForeground": "#A10035",
+    "list.warningForeground": "#ef5b0c",
+    "gitDecoration.untrackedResourceForeground": "#18978f",
+    "gitDecoration.modifiedResourceForeground": "#ffc0cb",
+    "gitDecoration.addedResourceForeground": "#7a4069",
+
+    "editorSuggestWidget.focusHighlightForeground": "#ef5b0c",
+    "editorSuggestWidget.foreground": "#5A8F7B",
+    "editorSuggestWidget.highlightForeground": "#7a4069",
+
     "activityBar.background": "#000b1e",
-    "activityBar.border": "#A10035",
+    "activityBar.border": "#18978f",
     "activityBar.inactiveForeground": "#18978f",
     "activityBar.activeBackground": "#A10035",
     "activityBar.activeBorder": "#A10035",
 
     "sideBar.background": "#000b1e",
+    "sideBar.border": "#ffc0cb",
     "sideBar.foreground": "#5A8F7B",
-    "sideBarSectionHeader.background": "#000b1e",
-    "sideBar.border": "#A10035",
 
     "editorGroupHeader.tabsBackground": "#000b1e",
     "tab.inactiveBackground": "#000b1e",
@@ -31,6 +46,40 @@
     "editorLineNumber.activeForeground": "#ff69b4",
     "editorLineNumber.foreground": "#18978f",
     "editorCursor.background": "#000b1e",
+
+    "symbolIcon.arrayForeground": "#ef5b0c",
+    "symbolIcon.booleanForeground": "#ef5b0c",
+    "symbolIcon.classForeground": "#ef5b0c",
+    "symbolIcon.colorForeground": "#ef5b0c",
+    "symbolIcon.constantForeground": "#ef5b0c",
+    "symbolIcon.enumeratorForeground": "#ef5b0c",
+    "symbolIcon.enumeratorMemberForeground": "#ef5b0c",
+    "symbolIcon.eventForeground": "#ef5b0c",
+    "symbolIcon.fieldForeground": "#ef5b0c",
+    "symbolIcon.fileForeground": "#ef5b0c",
+    "symbolIcon.folderForeground": "#ef5b0c",
+    "symbolIcon.interfaceForeground": "#ef5b0c",
+    "symbolIcon.keyForeground": "#ef5b0c",
+    "symbolIcon.keywordForeground": "#ef5b0c",
+    "symbolIcon.methodForeground": "#ef5b0c",
+    "symbolIcon.moduleForeground": "#ef5b0c",
+    "symbolIcon.namespaceForeground": "#ef5b0c",
+    "symbolIcon.nullForeground": "#ef5b0c",
+    "symbolIcon.numberForeground": "#ef5b0c",
+    "symbolIcon.propertyForeground": "#ef5b0c",
+    "symbolIcon.snippetForeground": "#ef5b0c",
+    "symbolIcon.stringForeground": "#ef5b0c",
+    "symbolIcon.structForeground": "#ef5b0c",
+    "symbolIcon.textForeground": "#ef5b0c",
+    "symbolIcon.typeParameterForeground": "#ef5b0c",
+    "symbolIcon.unitForeground": "#ef5b0c",
+    "symbolIcon.variableForeground": "#ef5b0c",
+    "symbolIcon.referenceForeground": "#ef5b0c",
+    "symbolIcon.packageForeground": "#ef5b0c",
+    "symbolIcon.operatorForeground": "#ef5b0c",
+    "symbolIcon.objectForeground": "#ef5b0c",
+    "symbolIcon.functionForeground": "#ef5b0c",
+    "symbolIcon.constructorForeground": "#ef5b0c",
 
     "terminal.background": "#000b1e",
     "terminal.foreground": "#5A8F7B",
@@ -74,5 +123,6 @@
 
   "git.openRepositoryInParentFolders": "never",
   "workbench.preferredHighContrastColorTheme": "Abyss",
-  "workbench.preferredDarkColorTheme": "Abyss"
+  "workbench.preferredDarkColorTheme": "Abyss",
+  "workbench.iconTheme": null
 }
