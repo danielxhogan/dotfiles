@@ -10,15 +10,19 @@
   "workbench.colorCustomizations": {
     "focusBorder": "#ffc0cb",
     "list.activeSelectionBackground": "#000b1e",
-    "list.activeSelectionForeground": "#ffc0cb",
+    "list.activeSelectionForeground": "#34e2e2",
 
     "icon.foreground": "#ffc0cb",
-    "list.inactiveSelectionForeground": "#ffc0cb",
+    "list.inactiveSelectionForeground": "#34e2e2",
     "list.errorForeground": "#A10035",
     "list.warningForeground": "#ef5b0c",
-    "gitDecoration.untrackedResourceForeground": "#18978f",
     "gitDecoration.modifiedResourceForeground": "#ffc0cb",
+    "gitDecoration.stageModifiedResourceForeground": "#7a4069",
+    "gitDecoration.untrackedResourceForeground": "#18978f",
     "gitDecoration.addedResourceForeground": "#7a4069",
+    "gitDecoration.renamedResourceForeground": "#ffc0cb",
+    "gitDecoration.deletedResourceForeground": "#A10035",
+    "gitDecoration.stageDeletedResourceForeground": "#A10035",
 
     "editorSuggestWidget.focusHighlightForeground": "#ef5b0c",
     "editorSuggestWidget.foreground": "#5A8F7B",
@@ -42,10 +46,13 @@
     "statusBar.foreground": "#000b1e",
 
     "editor.background": "#000b1e",
+    "editorCursor.background": "#000b1e",
     "editorCursor.foreground": "#34e2e2",
     "editorLineNumber.activeForeground": "#ff69b4",
     "editorLineNumber.foreground": "#18978f",
-    "editorCursor.background": "#000b1e",
+    "editorGutter.addedBackground": "#ffc0cb",
+    "editorGutter.modifiedBackground": "#ef5b0c",
+    "editorGutter.deletedBackground": "#A10035",
 
     "symbolIcon.arrayForeground": "#ef5b0c",
     "symbolIcon.booleanForeground": "#ef5b0c",
