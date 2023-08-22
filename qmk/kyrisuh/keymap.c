@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_SYM] = LAYOUT(
       KC_AMPR, KC_EXLM, KC_CIRC, KC_LPRN, KC_RPRN, KC_PERC,                                     KC_PPLS,    KC_7,    KC_8,    KC_9,  KC_EQL, _______,
       KC_TILD, KC_HASH,   KC_AT, KC_LCBR, KC_RCBR, KC_PIPE,                                     KC_PMNS,    KC_4,    KC_5,    KC_6, KC_PAST,  KC_GRV,
-      _______, KC_BSLS, KC_UNDS, KC_LBRC, KC_RBRC,  KC_DLR, _______, _______, _______, _______,    KC_0,    KC_1,    KC_2,    KC_3, KC_SLSH,  KC_NUM,
+      _______, KC_BSLS, KC_UNDS, KC_LBRC, KC_RBRC,  KC_DLR, _______, _______, _______, _______,    KC_0,    KC_1,    KC_2,    KC_3, KC_SLSH,  KC_DOT,
                                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FUNCTION] = LAYOUT(
       _______, _______, _______, _______, _______, _______,                                     KC_PSCR,   KC_F9,  KC_F10, KC_F11, KC_F12,  _______,
       _______, _______, _______, _______, _______, _______,                                     KC_SCRL,   KC_F5,   KC_F6,  KC_F7,  KC_F8,  _______,
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_PAUS,   KC_F1,   KC_F2,  KC_F3,  KC_F4,  _______,
+      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_PAUS,   KC_F1,   KC_F2,  KC_F3,  KC_F4,   KC_NUM,
                                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 
