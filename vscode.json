@@ -30,9 +30,9 @@
 
     "activityBar.background": "#000b1e",
     "activityBar.border": "#18978f",
-    "activityBar.inactiveForeground": "#18978f",
-    "activityBar.activeBackground": "#A10035",
-    "activityBar.activeBorder": "#A10035",
+    "activityBar.inactiveForeground": "#ffc0cb",
+    "activityBar.activeBackground": "#18978f",
+    "activityBar.activeBorder": "#18978f",
 
     "sideBar.background": "#000b1e",
     "sideBar.border": "#ffc0cb",
@@ -42,7 +42,7 @@
     "tab.inactiveBackground": "#000b1e",
     "tab.activeBorder": "#ffc0cb",
     "breadcrumb.foreground": "#5A8F7B",
-    "statusBar.background": "#A10035",
+    "statusBar.background": "#34e2e2",
     "statusBar.foreground": "#000b1e",
 
     "editor.background": "#000b1e",
@@ -131,5 +131,6 @@
   "git.openRepositoryInParentFolders": "never",
   "workbench.preferredHighContrastColorTheme": "Abyss",
   "workbench.preferredDarkColorTheme": "Abyss",
-  "workbench.iconTheme": null
+  "workbench.iconTheme": null,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

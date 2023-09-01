@@ -88,8 +88,8 @@ bar {
                 separator $orange
 
                 #                       border          background      text
-                focused_workspace       $lightpink      $background     $lightpink
-                inactive_workspace      $background     $background     $green
+                focused_workspace       $background     $turquoise      $deepred
+                inactive_workspace      $lightpink      $lightpink      $green
                 urgent_workspace        $background     $deepred        $neonblue
         }
 }
