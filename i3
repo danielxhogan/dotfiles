@@ -74,7 +74,7 @@ font pango:monospace 14
 client.focused              $turquoise         $turquoise       $background
 client.unfocused            $turquoise         $background      $turquoise
 client.focused_inactive     $turquoise         $turquoise       $lightpink
-client.urgent               $orange            $orange          $background
+client.urgent               $turquoise         $deepred         $neonblue
 
 # i3bar
 bar {
