@@ -44,6 +44,8 @@
     "breadcrumb.foreground": "#5A8F7B",
     "statusBar.background": "#18978f",
     "statusBar.foreground": "#000b1e",
+    "statusBarItem.remoteBackground": "#18978f",
+    "statusBarItem.remoteForeground": "#000b1e",
 
     "editor.background": "#000b1e",
     "editorCursor.background": "#000b1e",
