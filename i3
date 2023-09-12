@@ -42,9 +42,9 @@ bindsym $mod+c exec code
 bindsym $mod+g exec google-chrome
 
 bindsym $mod+y exec slack
-bindsym $mod+u exec spotify
+bindsym $mod+o exec spotify
 bindsym $mod+i exec discord
-bindsym $mod+o exec brave --incognito
+bindsym $mod+u exec brave --incognito
 bindsym $mod+p exec postman
 
 bindsym $mod+d exec --no-startup-id dmenu_run
@@ -80,7 +80,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:monospace 10
+        font pango:monospace 14
 
         colors {
                 background $background
@@ -136,18 +136,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # names for default workspaces
-set $ws0 " 0::[] "
-set $ws1 " 1::[] "
-set $ws2 " 2::[] "
-set $ws3 " 3::[] "
-set $ws4 " 4::[] "
-set $ws5 " 5::[] "
-set $ws6 " 6::[] "
-set $ws7 " 7::[] "
-set $ws8 " 8::[] "
-set $ws9 " 9::[] "
-set $ws10 "10"
-set $ws11 "11"
+set $ws0 " 0::[  ] "
+set $ws1 " 1::[  ] "
+set $ws2 " 2::[  ] "
+set $ws3 " 3::[  ] "
+set $ws4 " 4::[ ] "
+set $ws5 " 5::[ ] "
+set $ws6 " 6::[  ] "
+set $ws7 " 7::[  ] "
+set $ws8 " 8::[  ] "
+set $ws9 " 9::[  ] "
+set $ws10 " 10::[ ] "
+set $ws11 " 11::[ ] "
 
 # switch to workspace
 bindsym $mod+0 workspace number $ws0
