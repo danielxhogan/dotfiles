@@ -4,20 +4,20 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -32,6 +32,12 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -68,6 +74,18 @@
                 "guid": "{302afa03-5462-52c9-91e9-9825fa6e5bae}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{6cdfaf13-538e-5256-b51d-bb77eb43f81c}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{49f9667f-1d2f-5d87-b0e9-fae2dc5a6861}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
                 "source": "Windows.Terminal.VisualStudio"
             }
         ]
@@ -283,26 +301,27 @@
         },
         {
             "background": "#000B1E",
-            "black": "#123E7C",
+            "black": "#000B1E",
             "blue": "#18978F",
-            "brightBlack": "#1C61C2",
-            "brightBlue": "#0ABDC6",
-            "brightCyan": "#7A4069",
+            "brightBlack": "#FFC0CB",
+            "brightBlue": "#34E2E2",
+            "brightCyan": "#FFC0CB",
             "brightGreen": "#18978F",
-            "brightPurple": "#7A4069",
-            "brightRed": "#FF0000",
+            "brightPurple": "#EF5B0C",
+            "brightRed": "#A10035",
             "brightWhite": "#D7D7D5",
             "brightYellow": "#EF5B0C",
             "cursorColor": "#34E2E2",
-            "cyan": "#0ABDC6",
+            "cyan": "#34E2E2",
             "foreground": "#5A8F7B",
-            "green": "#18978F",
+            "green": "#FFC0CB",
             "name": "suh",
             "purple": "#7A4069",
-            "red": "#FF0000",
+            "red": "#A10035",
             "selectionBackground": "#FFFFFF",
             "white": "#D7D7D5",
-            "yellow": "#A10035"
+            "yellow": "#EF5B0C"
         }
-    ]
+    ],
+    "themes": []
 }
