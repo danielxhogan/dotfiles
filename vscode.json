@@ -1,7 +1,7 @@
 {
   "workbench.colorTheme": "suh",
   "editor.bracketPairColorization.enabled": false,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
   "editor.cursorSurroundingLines": 5,
   "editor.cursorBlinking": "solid",
@@ -134,5 +134,8 @@
   "workbench.preferredHighContrastColorTheme": "Abyss",
   "workbench.preferredDarkColorTheme": "Abyss",
   "workbench.iconTheme": null,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "fit"
 }
