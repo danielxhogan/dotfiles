@@ -5,8 +5,9 @@ mkdir ~/.config/i3status
 ln -s ~/dotfiles/i3status ~/.config/i3status/config
 
 mkdir ~/.config/alacritty
-ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+rm ~/.zshrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
