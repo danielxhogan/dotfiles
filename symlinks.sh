@@ -12,6 +12,8 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+ln -s ~/dotfiles/picom.conf ~/.config/picom.conf
+
 ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
 
 ln -s ~/dotfiles/qmk/qmk.ini ~/.config/qmk/qmk.ini
