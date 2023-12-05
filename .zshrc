@@ -73,8 +73,9 @@ ZSH_THEME="afowler"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+
+# source /usr/share/fzf/key-bindings.zsh
+# source /usr/share/fzf/completion.zsh
 
 # User configuration
 
