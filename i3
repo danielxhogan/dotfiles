@@ -23,7 +23,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Suspend
-bindsym $mod+Shift+period exec systemctl suspend
+bindsym $mod+Shift+period exec "~/dotfiles/i3lock && systemctl suspend"
 
 # terminal shortcuts
 bindsym $mod+Return exec alacritty
@@ -41,15 +41,15 @@ bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
 bindsym $mod+c exec code
 bindsym $mod+g exec librewolf --private-window
 
-bindsym $mod+y exec slack
-bindsym $mod+u exec brave --incognito
-bindsym $mod+i exec discord
+bindsym $mod+y exec brave --incognito
+bindsym $mod+u exec virt-manager
+bindsym $mod+i exec keepassxc
 bindsym $mod+o exec spotify
-bindsym $mod+p exec virt-manager
+bindsym $mod+p exec discord
 
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+s exec gnome-control-center
-bindsym $mod+a exec nautilus
+bindsym $mod+a exec caja
 
 # kill focused window
 bindsym $mod+q kill
@@ -80,7 +80,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:monospace 12
+        font pango:monospace 16
 
         colors {
                 background $background
@@ -88,25 +88,25 @@ bar {
                 separator $orange
 
                 #                       border          background      text
-                focused_workspace       $lightpink      $lightpink      $background
+                focused_workspace       $background      $lightpink      $background
                 inactive_workspace      $turquoise      $turquoise      $background
                 urgent_workspace        $background     $deepred        $neonblue
         }
 }
 
 # names for default workspaces
-set $ws0 " 0::[  ] "
-set $ws1 " 1::[  ] "
-set $ws2 " 2::[  ] "
-set $ws3 " 3::[ x ] "
-set $ws4 " 4::[  ] "
-set $ws5 " 5::[  ] "
-set $ws6 " 6::[ x ] "
-set $ws7 " 7::[  ] "
-set $ws8 " 8::[  ] "
-set $ws9 " 9::[  ] "
-set $ws10 " 10::[ x ] "
-set $ws11 " 11::[ x ] "
+set $ws0 "0: _files"
+set $ws1 "1: _cmd"
+set $ws2 "2: _opsec"
+set $ws3 "3: ____"
+set $ws4 "4: _web"
+set $ws5 "5: _code"
+set $ws6 "6: ____"
+set $ws7 "7: _qemu"
+set $ws8 "8: _chat"
+set $ws9 "9: _tunes"
+set $ws10 "10: ____"
+set $ws11 "11: ____"
 
 # rocket
 # 
