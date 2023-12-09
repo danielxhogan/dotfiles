@@ -84,7 +84,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:monospace 16
+        font pango:SourceCodePro bold 16
 
         colors {
                 background $background
