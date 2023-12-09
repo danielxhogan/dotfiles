@@ -16,7 +16,7 @@ exec --no-startup-id nm-applet
 set $mod Mod4
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+f reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -26,30 +26,34 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+period exec "~/dotfiles/i3lock && systemctl suspend"
 
 # terminal shortcuts
+bindsym $mod+n exec caja
+
 bindsym $mod+Return exec alacritty
 bindsym $mod+m exec alacritty -e tmux new -s Mane -n Terminator
-bindsym $mod+n exec alacritty -e tmux new -s Audi -n Terminator
+bindsym $mod+c exec alacritty -e tmux new -s Audi -n Terminator
 bindsym $mod+v exec alacritty -e tmux new -s Reefer -n Terminator
 bindsym $mod+b exec alacritty -e tmux new -s Background -n Terminator
 
 bindsym $mod+Shift+m exec alacritty -e tmux a -t Mane
-bindsym $mod+Shift+n exec alacritty -e tmux a -t Audi
+bindsym $mod+Shift+c exec alacritty -e tmux a -t Audi
 bindsym $mod+Shift+v exec alacritty -e tmux a -t Reefer
 bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
 
-# app shortcuts
-bindsym $mod+c exec code
-bindsym $mod+g exec librewolf --private-window
+bindsym $mod+comma exec keepassxc
 
-bindsym $mod+y exec brave --incognito
+# app shortcuts
+bindsym $mod+Escape exec code
+
+bindsym $mod+f exec librewolf --private-window
+bindsym $mod+g exec brave --incognito
+
+
 bindsym $mod+u exec virt-manager
-bindsym $mod+i exec keepassxc
+bindsym $mod+i exec discord
 bindsym $mod+o exec spotify
-bindsym $mod+p exec discord
 
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+s exec gnome-control-center
-bindsym $mod+a exec caja
 
 # kill focused window
 bindsym $mod+q kill
@@ -146,9 +150,9 @@ bindsym $mod+Shift+z move container to workspace number $ws10
 bindsym $mod+Shift+x move container to workspace number $ws11
 
 # layout
-bindsym $mod+f fullscreen toggle
+bindsym $mod+semicolon fullscreen toggle
 
-bindsym $mod+t layout tabbed
+bindsym $mod+r layout tabbed
 bindsym $mod+w layout stacking
 bindsym $mod+e layout toggle split
 
@@ -187,7 +191,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # resize
-bindsym $mod+r mode "resize"
+bindsym $mod+t mode "resize"
 
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
