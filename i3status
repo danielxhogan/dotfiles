@@ -13,7 +13,10 @@ order += "tztime 2"
 
 // get audio device name
 // pacmd list-sinks | grep name:
-// pactl
+
+// pactl list
+// look for Default Sink
+
 volume master {
         format = " %volume"
         format_muted = " (%volume)"
