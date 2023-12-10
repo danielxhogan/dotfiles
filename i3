@@ -72,7 +72,7 @@ set $white #d7d7d5
 
 # borders
 default_border pixel 5
-font pango:monospace 14
+font pango:SourceCodePro bold 12
 
 # set some nice colors      border             background       text
 client.focused              $turquoise         $turquoise       $background
@@ -84,7 +84,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:SourceCodePro bold 16
+        font pango:SourceCodePro bold 12
 
         colors {
                 background $background
@@ -102,15 +102,15 @@ bar {
 set $ws0 "0: _files"
 set $ws1 "1: _cmd"
 set $ws2 "2: _opsec"
-set $ws3 "3: ____"
+set $ws3 "3: ______"
 set $ws4 "4: _web"
 set $ws5 "5: _code"
-set $ws6 "6: ____"
+set $ws6 "6: ______"
 set $ws7 "7: _qemu"
 set $ws8 "8: _chat"
 set $ws9 "9: _tunes"
-set $ws10 "10: ____"
-set $ws11 "11: ____"
+set $ws10 "10: _____"
+set $ws11 "11: _____"
 
 # rocket
 # 
