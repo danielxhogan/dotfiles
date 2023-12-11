@@ -157,15 +157,11 @@ swapon /dev/[partition name]
 mkfs.ext4 /dev/[partition name eg. sda3]
 ```
 
-### Mount the partitions
+### Mount
 
 ```
 // mount root partition
 mount /dev/[partition 3] /mnt
-
-// mount the boot partiont
-mkdir /mnt/boot
-mount /dev/[partition 1] /mnt/boot
 ```
 
 ## Install
@@ -203,11 +199,6 @@ vim /etc/locale.gen
 
 // update locale
 locale-gen
-
-// set timezone
-ln -s /usr/share/zoneinfo/America/Los_Angeles > /etc/localtime
-hwclock --systohc -- utc
-systemctl enable fstrim.timer
 ```
 
 ### User/Passwords
@@ -250,7 +241,7 @@ pacman -Sy
 
 ```
 // download grub and deps
-pacman -S grub efibootmgr dosfstools os-prober mtools
+pacman -S grub efibootmgr
 
 // mount efi partition
 mkdir /boot/EFI
@@ -258,9 +249,6 @@ mount /dev/[partition 1] /boot/EFI
 
 // install grub to the efi partiont
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
-
-// set language for crypt passphrase prompt
-cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en\@quot.mo
 
 // generate grub config
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -325,7 +313,7 @@ sudo pacman -S intel-ucode
 
 ```
 // essential software
-pacman -S git xfce4 i3 dmenu alacritty zsh tmux exa timeshift keepassxc vscode pavucontrol pulseaudio xorg-xrandr feh ttf-font-awesome neofetch
+pacman -S git xfce4 i3 dmenu alacritty zsh exa timeshift keepassxc vscode pavucontrol pulseaudio xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
 
 // possible extra apps
 pacman -S caja lxappearance picom
@@ -382,6 +370,9 @@ ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
 ```
 // get nvidia driver
 pacman -S nvidia nvidia-settings nvidia-utils
+
+// get xorg
+pacman -S xorg-server
 ```
 
 ### i3 standalone
@@ -395,7 +386,6 @@ exec i3
 
 // to start i3
 startx
-sytemctl start sddm
 ```
 
 ### i3 inside of xfce
@@ -594,7 +584,7 @@ vim /etc/modprobe.d/vfio.conf
 // add the lines
 options vfio-pci ids:[gpu device id], [gpu audio device id]
 softdep nvidia pre: vfio-pci
-// softdep drm pre:vfio-pci
+// softdep drm pre: vfio-pci
 
 // remake initramfs
 mkinitcpio -p linux
