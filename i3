@@ -26,8 +26,6 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+period exec "~/dotfiles/i3lock && systemctl suspend"
 
 # terminal shortcuts
-bindsym $mod+n exec caja
-
 bindsym $mod+Return exec alacritty
 bindsym $mod+m exec alacritty -e tmux new -s Mane -n Terminator
 bindsym $mod+c exec alacritty -e tmux new -s Audi -n Terminator
@@ -39,21 +37,23 @@ bindsym $mod+Shift+c exec alacritty -e tmux a -t Audi
 bindsym $mod+Shift+v exec alacritty -e tmux a -t Reefer
 bindsym $mod+Shift+b exec alacritty -e tmux a -t Background
 
-bindsym $mod+comma exec keepassxc
 
 # app shortcuts
-bindsym $mod+Escape exec code
-
-bindsym $mod+f exec librewolf --private-window
 bindsym $mod+g exec brave --incognito
+bindsym $mod+f exec librewolf --private-window
+bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+s exec xfce4-settings-manager
+bindsym $mod+a exec pavucontrol
+bindsym $mod+Escape exec code
 
 
 bindsym $mod+u exec virt-manager
 bindsym $mod+i exec discord
-bindsym $mod+o exec spotify
+bindsym $mod+o exec spotify-launcher
 
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+s exec gnome-control-center
+bindsym $mod+n exec thunar
+bindsym $mod+comma exec keepassxc
+
 
 # kill focused window
 bindsym $mod+q kill
@@ -72,7 +72,7 @@ set $white #d7d7d5
 
 # borders
 default_border pixel 5
-font pango:SourceCodePro bold 12
+font pango:SourceCodePro bold 16
 
 # set some nice colors      border             background       text
 client.focused              $turquoise         $turquoise       $background
@@ -84,7 +84,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:SourceCodePro bold 12
+        font pango:SourceCodePro bold 16
 
         colors {
                 background $background

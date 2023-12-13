@@ -234,7 +234,7 @@ vim /etc/pacman.conf
 // uncomment the line starting with [multilib], and the line below
 
 // add 32 bit packages to package list
-pacman -Sy
+pacman -Syu
 ```
 
 ## Grub
@@ -313,10 +313,10 @@ sudo pacman -S intel-ucode
 
 ```
 // essential software
-pacman -S git xfce4 i3 dmenu alacritty zsh exa timeshift keepassxc vscode pavucontrol pulseaudio xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
+pacman -S git xfce4 i3 dmenu alacritty zsh exa timeshift keepassxc android-file-transfer vscode spotify-launcher pavucontrol pulseaudio xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
 
 // possible extra apps
-pacman -S caja lxappearance picom
+pacman -S caja lxappearance
 
 // install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -330,6 +330,14 @@ rm -rf yay-bin
 
 // install yay packages
 yay -S librewolf-bin brave-bin openrgb-bin i3lock-color yaru-gtk-theme yaru-icon-theme
+```
+
+### Start/enable cronie
+
+```
+// timeshift needs this service
+systemctl start cronie
+systemctl enable cronie
 ```
 
 ### Configure openrgb
