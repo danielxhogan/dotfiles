@@ -47,6 +47,7 @@ bindsym $mod+a exec pavucontrol
 bindsym $mod+Escape exec code
 
 
+bindsym $mod+y exec steam
 bindsym $mod+u exec virt-manager
 bindsym $mod+i exec discord
 bindsym $mod+o exec spotify-launcher
