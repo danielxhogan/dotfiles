@@ -54,6 +54,7 @@ bindsym $mod+o exec spotify-launcher
 
 bindsym $mod+n exec thunar
 bindsym $mod+comma exec keepassxc
+bindsym $mod+period exec openrgb
 
 
 # kill focused window
