@@ -304,7 +304,7 @@ systemctl enable systemd-timesyncd
  ### Install microcode
 
 ```
-sudo pacman -S intel-ucode
+pacman -S intel-ucode
 ```
 
 ## Workspace
@@ -437,14 +437,14 @@ i3
 
 ```
 // install necesarry packages
-pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat libguestfs
+pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat libguestfs qemu-hw-usb-host
 
 // start and enable the libvirt service to use kvm
 systemctl start libvirtd
 systemctl enable libvirtd
 
 // add permission for my user for kvm
-sudo vim /etc/libvirt/libvirtd.conf
+vim /etc/libvirt/libvirtd.conf
 
 // uncomment the following lines
 unix_sock_group = "libvirt"
@@ -452,25 +452,22 @@ unix_sock_ro_perms = "0777"
 unix_sock_rw_perms = "0770"
 
 // add myself to the libvirt group
-sudo usermod -a -G libvirt $(whoami)
+usermod -a -G libvirt $(whoami)
 
 // activate the change
 newgrp libvirt
 
 // restart the service
-sudo systemctl restart libvirtd
+systemctl restart libvirtd
 
 // show status of networks
-sudo virsh net-list --all
+virsh net-list --all
 
 // start the network
-sudo virsh net-start default
+virsh net-start default
 
 // set the network to autostart
-sudo virsh net-autostart default
-
-// allow usb device passthrough
-pacman -S qemu-hw-usb-host
+virsh net-autostart default
 ```
 
 ### Mount WinGames
@@ -481,7 +478,7 @@ pacman -S fuse ntfs-3g
 
 // mount the drive
 mkdir /mnt/WinGames
-sudo mount -t ntfs-3g /dev/[partition name] /mnt/WinGames
+mount -t ntfs-3g /dev/[partition name] /mnt/WinGames
 ```
 
 ### Creating a Windows vm
@@ -536,15 +533,21 @@ sudo mount -t ntfs-3g /dev/[partition name] /mnt/WinGames
 ### modify system for GPU pass through
 
 - make sure intel vt-d is enabled in the bios
+- make a backup before making any of the following changes
+- mistakes in the two files edited below can cause the system not to boot
 
 ```
-// test out changes before persisting
+// get the ids of the gpu grapics and audio devices eg. 10de:1c82
+lspci -nnk
 
-- reboot computer
-- press e when grub screen displays
-- find the line starting with linux and add the following:
-  intel_iommu=on iommu=pt
--press ctrl-x to boot
+// edit grub config
+vim /etc/default/grub
+
+// add parameters to the line starting with GRUB_CMDLINE_LINUX_DEFAULT:
+intel_iommu=on iommu=pt vfio-pci.ids=[gpu device id],[gpu audio device id]
+
+// regenerate grub config
+grub-mkconfig -o /boot/grub/grub.cfg
 
 // check for iommu capability
 dmesg | grep -i -e DMAR -e IOMMU
@@ -565,34 +568,23 @@ done;
 chmod +x check-iommu.sh
 ./check-iommu.sh
 
-// if no issues, persist changes
-vim /etc/default/grub
+// make change to grub config on demand
+// for testing changes without persisting
+// or fixing changes that caused the system not to boot
 
-// add parameters to the line starting with GRUB_CMDLINE_LINUX_DEFAULT:
-intel_iommu=on iommu=pt
-
-// regenerate grub config
-grub-mkconfig -o /boot/grub/grub.cfg
-
-// get the ids of the gpu grapics and audio devices eg. 10de:1c82
-lspci -nn
-
-// edit the grub config file
-vim /etc/default/grub
-
-// add parameters to the line starting with GRUB_CMDLINE_LINUX_DEFAULT:
-vfio-pci.ids=[gpu device id],[gpu audio device id]
-
-// rebuild grub
-grub-mkconfig -o /boot/grub/grub.cfg
+- reboot computer
+- press e when grub screen displays
+- find the line starting with linux and add the following:
+  intel_iommu=on iommu=pt vfio-pci.ids=[gpu device id],[gpu audio device id]
+-press ctrl-x to boot
 
 // make gpu use vfio drivers on boot
 vim /etc/modprobe.d/vfio.conf
 
 // add the lines
-options vfio-pci ids:[gpu device id], [gpu audio device id]
+options vfio-pci ids:[gpu device id],[gpu audio device id]
 softdep nvidia pre: vfio-pci
-// softdep drm pre: vfio-pci
+softdep drm pre: vfio-pci
 
 // remake initramfs
 mkinitcpio -p linux
