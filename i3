@@ -74,7 +74,7 @@ set $white #d7d7d5
 
 # borders
 default_border pixel 5
-font pango:SourceCodePro bold 16
+font pango:SourceCodePro bold 12
 
 # set some nice colors      border             background       text
 client.focused              $turquoise         $turquoise       $background
@@ -86,7 +86,7 @@ client.urgent               $turquoise         $deepred         $neonblue
 bar {
         status_command i3status
         separator_symbol " x "
-        font pango:SourceCodePro bold 16
+        font pango:SourceCodePro bold 12
 
         colors {
                 background $background
@@ -101,16 +101,16 @@ bar {
 }
 
 # names for default workspaces
-set $ws0 "0: _files"
-set $ws1 "1: _cmd"
-set $ws2 "2: _opsec"
-set $ws3 "3: ______"
-set $ws4 "4: _web"
-set $ws5 "5: _code"
-set $ws6 "6: ______"
-set $ws7 "7: _qemu"
-set $ws8 "8: _chat"
-set $ws9 "9: _tunes"
+set $ws0 "0:  files"
+set $ws1 "1:  cmd"
+set $ws2 "2:  opsec"
+set $ws3 "3: _____"
+set $ws4 "4:  web"
+set $ws5 "5:  code"
+set $ws6 "6: _____"
+set $ws7 "7:  qemu"
+set $ws8 "8:  chat"
+set $ws9 "9:  tunes"
 set $ws10 "10: _____"
 set $ws11 "11: _____"
 
