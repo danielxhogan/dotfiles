@@ -514,7 +514,7 @@ mount -t ntfs-3g /dev/[partition name] /mnt/WinGames
 - make sure to choose core in the installer
 
 - search for virtio win fedora
-- click stabe-virtio and then choose virtio-win-guest-tools.exe
+- click stable-virtio and then choose virtio-win-guest-tools.exe
 - make sure to choose Viofs in the installer
 - after the installation is complete, reboot the vm
 
@@ -537,7 +537,7 @@ mount -t ntfs-3g /dev/[partition name] /mnt/WinGames
 - mistakes in the two files edited below can cause the system not to boot
 
 ```
-// get the ids of the gpu grapics and audio devices eg. 10de:1c82
+// get the ids of the gpu graphics and audio devices eg. 10de:1c82
 lspci -nnk
 
 // edit grub config
