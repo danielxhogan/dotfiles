@@ -238,8 +238,8 @@ colors:
     # present. If the bright foreground color is not set, or
     # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
     # color will be used.
-    dim_foreground: "0xffc0cb"
-    bright_foreground: "0xffc0cb"
+    # dim_foreground: "0xffc0cb"
+    # bright_foreground: "0xffc0cb"
 
     # Cursor colors
     #
@@ -267,12 +267,12 @@ colors:
     #search:
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    matches:
-      foreground: "0x000b1e"
-      background: "0x0abdc6"
-    focused_match:
-      foreground: "0x000b1e"
-      background: "0x0abdc6"
+    # matches:
+    #   foreground: "0x000b1e"
+    #   background: "0x0abdc6"
+    # focused_match:
+    #   foreground: "0x000b1e"
+    #   background: "0x0abdc6"
 
   # Keyboard hints
   #hints:
