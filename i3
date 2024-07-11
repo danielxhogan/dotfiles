@@ -23,7 +23,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Suspend
-bindsym $mod+Shift+period exec "~/dotfiles/i3lock && systemctl suspend"
+# bindsym $mod+slash exec "systemctl suspend"
+# bindsym $mod+slash exec "systemctl hibernate"
+# bindsym $mod+Shift+slash exec "~/dotfiles/i3lock"
+# bindsym $mod+Shift+slash exec "~/dotfiles/i3lock && systemctl suspend"
 
 # terminal shortcuts
 bindsym $mod+Return exec alacritty
