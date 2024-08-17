@@ -313,7 +313,7 @@ pacman -S intel-ucode
 
 ```
 // essential software
-pacman -S git xfce4 i3 dmenu alacritty zsh exa timeshift keepassxc android-file-transfer vscode spotify-launcher pavucontrol pulseaudio xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
+pacman -S git xfce4 xfce4-screenshooter i3 dmenu alacritty zsh exa timeshift keepassxc android-file-transfer vscode spotify-launcher vlc blender gimp pavucontrol pulseaudio pamixer playerctl xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
 
 // possible extra apps
 pacman -S caja lxappearance
@@ -329,7 +329,7 @@ cd ..
 rm -rf yay-bin
 
 // install yay packages
-yay -S librewolf-bin brave-bin openrgb-bin i3lock-color yaru-gtk-theme yaru-icon-theme
+yay -S librewolf-bin brave-bin makemkv openrgb-bin i3lock-color yaru-gtk-theme yaru-icon-theme
 ```
 
 ### Start/enable cronie
