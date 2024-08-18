@@ -370,7 +370,8 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 ln -s ~/dotfiles/picom.conf ~/.config/picom.conf
 
-ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
+rm ~/.config/Code\ -\ OSS/User/settings.json
+ln -s ~/dotfiles/vscode.json ~/.config/Code\ -\ OSS/User/settings.json
 ```
 
 ## Graphics
@@ -424,6 +425,7 @@ Alacritty
 VSCode
   - open settings and search for font
   - under Editor: Font Family, change the first choice inside the quotes to an existing font with spaces
+  - Source Code Pro is a good default
 
 i3
   - find the i3bar section in i3 config file
