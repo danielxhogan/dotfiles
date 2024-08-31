@@ -313,7 +313,7 @@ pacman -S intel-ucode
 
 ```
 // essential software
-pacman -S git xfce4 xfce4-screenshooter i3 dmenu alacritty zsh exa timeshift keepassxc android-file-transfer vscode spotify-launcher vlc blender gimp pavucontrol pulseaudio pamixer playerctl xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
+pacman -S git xfce4 xfce4-screenshooter i3 dmenu alacritty zsh exa timeshift keepassxc android-file-transfer vscode spotify-launcher handbrake vlc blender gimp pavucontrol pulseaudio pamixer playerctl xorg-xrandr feh ttf-font-awesome bashtop cmatrix neofetch
 
 // possible extra apps
 pacman -S caja lxappearance
