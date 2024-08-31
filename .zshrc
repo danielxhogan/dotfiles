@@ -106,6 +106,13 @@ alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
 
+alias ffmpeg="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffmpeg"
+alias ffprobe="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffprobe"
+alias ffplay="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffplay"
+
+export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib"
+
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
