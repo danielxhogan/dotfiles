@@ -52,7 +52,8 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#7a4069"
+        // "foreground": "#7a4069"
+        "foreground": "#9b6a90"
       }
     },
     {
@@ -162,7 +163,8 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#7a4069"
+        // "foreground": "#7a4069"
+        "foreground": "#9b6a90"
       }
     },
     {
