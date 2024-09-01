@@ -110,7 +110,7 @@ alias ffmpeg="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ff
 alias ffprobe="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffprobe"
 alias ffplay="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffplay"
 
-export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib"
+export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
