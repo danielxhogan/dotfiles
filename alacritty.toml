@@ -53,6 +53,6 @@ foreground = "0x5a8f7b"
 [font]
 size = 12.0
 
-[font.normal]
-family = "SourceCodePro"
-style = "Semibold"
+# [font.normal]
+# family = "SourceCodePro"
+# style = "Semibold"
