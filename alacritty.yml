@@ -200,7 +200,7 @@ colors:
     green: "0xffc0cb" # light pink
     yellow: "0xEF5B0C" # orange
     blue: "0x18978f" # turquiose
-    magenta: "0x7a4069" # purple
+    magenta: "0x9b6a90" # purple
     cyan: "0x34e2e2" # turquiose
     white: "0xd7d7d5" # light gray #c0c0c0 silver
 
@@ -211,7 +211,7 @@ colors:
     green: "0xffc0cb" # light pink
     yellow: "0xEF5B0C" # orange
     blue: "0x18978F" # turquoise
-    magenta: "0x7a4069" # purple
+    magenta: "0x9b6a90" # purple
     cyan: "0x34e2e2" # neon blue
     white: "0xd7d7d5" # light gray
 
@@ -221,7 +221,7 @@ colors:
     green: "#ffc0cb"
     yellow: "#EF5B0C"
     blue: "0x18978F"
-    magenta: "0x7a4069"
+    magenta: "0x9b6a90"
     cyan: "0x34e2e2"
     white: "#d7d7d5"
 
@@ -308,7 +308,7 @@ colors:
   # hyperlink URI preview, etc.
   #
   footer_bar:
-    background: "0x7A4069"
+    background: "0x9b6a90"
     foreground: "0x0abdc6"
 
   # Selection colors
