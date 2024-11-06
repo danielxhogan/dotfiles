@@ -20,7 +20,7 @@ sudo apt-get update -qq && sudo apt-get -y install \
   libva-dev \
   libvdpau-dev \
   libopus-dev \
-  ibvorbis-dev \
+  libvorbis-dev \
   libxcb1-dev \
   libxcb-shm0-dev \
   libxcb-xfixes0-dev \
