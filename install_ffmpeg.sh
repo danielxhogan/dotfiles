@@ -181,7 +181,7 @@ PATH="$HOME/ffmpeg/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkg
   --enable-libx264 \
   --enable-libx265 \
   --enable-nonfree \
-  --enable-libvmaf \
+  --enable-libvmaf && \
 PATH="$HOME/ffmpeg/bin:$PATH" make -j$(nproc) && \
 make install
 
