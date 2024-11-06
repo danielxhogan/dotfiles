@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+alias lah="exa -lah"
 
 alias ffmpeg="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffmpeg"
 alias ffprobe="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffprobe"
