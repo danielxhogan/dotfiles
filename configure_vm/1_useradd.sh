@@ -1,6 +1,6 @@
 # git clone https://github.com/danielxhogan/dotfiles.git
 
-apt install vim zsh curl exa
+apt install vim zsh curl exa cifs-utils
 
 useradd -m hugexjackedman
 passwd hugexjackedman
