@@ -88,13 +88,15 @@ echo "\n\n \
   building libfdk_aac \n \
   ******************* \n" && \
 \
-cd ~/ffmpeg/ffmpeg_sources && \
-git -C fdk-aac pull 2> /dev/null || git clone --depth 1 https://github.com/mstorsjo/fdk-aac && \
-cd fdk-aac && \
-autoreconf -fiv && \
-./configure --prefix="$HOME/ffmpeg/ffmpeg_build" --disable-shared && \
-make -j$(nproc) && \
-make install && \
+sudo apt-get install libfdk-aac-dev && \
+\
+# cd ~/ffmpeg/ffmpeg_sources && \
+# git -C fdk-aac pull 2> /dev/null || git clone --depth 1 https://github.com/mstorsjo/fdk-aac && \
+# cd fdk-aac && \
+# autoreconf -fiv && \
+# ./configure --prefix="$HOME/ffmpeg/ffmpeg_build" --disable-shared && \
+# make -j$(nproc) && \
+# make install && \
 \
 echo "\n\n \
   *************** \n \
@@ -181,9 +183,9 @@ PATH="$HOME/ffmpeg/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkg
   --enable-libx264 \
   --enable-libx265 \
   --enable-nonfree \
+  --enable-shared \
   --enable-libvmaf && \
 PATH="$HOME/ffmpeg/bin:$PATH" make -j$(nproc) && \
 make install
 
-# --enable-shared && \
 # --enable-libv4l2 \
