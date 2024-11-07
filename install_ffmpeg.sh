@@ -15,6 +15,7 @@ sudo apt-get update -qq && sudo apt-get -y install \
   libfreetype6-dev \
   libgnutls28-dev \
   libmp3lame-dev \
+  libfdk-aac-dev \
   libsdl2-dev \
   libtool \
   libva-dev \
@@ -34,10 +35,10 @@ sudo apt-get update -qq && sudo apt-get -y install \
   v4l-utils \
   nasm \
   libnuma-dev \
-  libunistring-dev \
-  python3-pip && \
+  libunistring-dev &&\
+  # python3-pip && \
 \
-pip3 install --user meson && \
+# pip3 install --user meson && \
 \
 echo "\n\n \
   **************** \n \
@@ -89,14 +90,6 @@ echo "\n\n \
   ******************* \n" && \
 \
 sudo apt-get install libfdk-aac-dev && \
-\
-# cd ~/ffmpeg/ffmpeg_sources && \
-# git -C fdk-aac pull 2> /dev/null || git clone --depth 1 https://github.com/mstorsjo/fdk-aac && \
-# cd fdk-aac && \
-# autoreconf -fiv && \
-# ./configure --prefix="$HOME/ffmpeg/ffmpeg_build" --disable-shared && \
-# make -j$(nproc) && \
-# make install && \
 \
 echo "\n\n \
   *************** \n \
