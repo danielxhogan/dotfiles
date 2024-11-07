@@ -32,4 +32,5 @@ sudo apt-get update -qq && sudo apt-get -y install \
   v4l-utils \
   nasm \
   libnuma-dev \
-  libunistring-dev
+  libunistring-dev \
+  libfdk-aac-dev
