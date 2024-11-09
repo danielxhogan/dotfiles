@@ -102,16 +102,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
 alias lah="exa -lah"
 
-alias ffmpeg="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffmpeg"
-alias ffprobe="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffprobe"
-alias ffplay="LD_LIBRARY_PATH=$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH ~/ffmpeg/bin/ffplay"
-
 export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH"
+
+alias ffmpeg="~/ffmpeg/bin/ffmpeg"
+alias ffprobe="~/ffmpeg/bin/ffprobe"
+alias ffplay="~/ffmpeg/bin/ffplay"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
