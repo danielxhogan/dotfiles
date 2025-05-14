@@ -3,7 +3,7 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
-  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLines": 10,
   "editor.cursorBlinking": "solid",
   // "vim.cursorStylePerMode.normal": "block",
 
@@ -139,4 +139,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.size": "fit",
   "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+  "security.workspace.trust.untrustedFiles": "open",
+  "mesonbuild.downloadLanguageServer": true,
 }

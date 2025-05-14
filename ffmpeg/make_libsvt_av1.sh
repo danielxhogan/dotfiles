@@ -1,3 +1,6 @@
+#!/bin/zsh
+source ~/.zshrc
+
 echo "\n\n \
   ******************* \n \
   building libsvt_av1 \n \

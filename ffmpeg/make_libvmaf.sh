@@ -1,3 +1,6 @@
+#!/bin/zsh
+source ~/.zshrc
+
 echo "\n\n \
   **************** \n \
   building libvmaf \n \

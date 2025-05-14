@@ -18,3 +18,8 @@ ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
 
 ln -s ~/dotfiles/qmk/qmk.ini ~/.config/qmk/qmk.ini
 ln -s ~/dotfiles/qmk/kyrisuh ~/qmk_firmware/keyboards/splitkb/kyria/keymaps/kyrisuh
+
+ln -s ~/dotfiles/mpv/mpv.conf ~/.config/mpv/mpv.conf
+ln -s ~/dotfiles/mpv/input.conf ~/.config/mpv/input.conf
+mkdir ~/.config/mpv/script-opts
+ln -s ~/dotfiles/mpv/script-opts/osc.conf ~/.config/mpv/script-opts/osc.conf
