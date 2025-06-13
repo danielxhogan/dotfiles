@@ -1,6 +1,6 @@
 # git clone https://github.com/danielxhogan/dotfiles.git
 
-apt install vim zsh curl exa cifs-utils
+apt install vim zsh curl exa cifs-utils tmux
 
 useradd -m hugexjackedman
 passwd hugexjackedman
