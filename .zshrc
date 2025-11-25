@@ -122,7 +122,7 @@ alias v="vlc"
 alias pl="ffplay -hide_banner"
 alias mb="MP4Box"
 
-export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib:LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib:$LD_LIBRARY_PATH"
 
 alias ffmpeg="~/ffmpeg/bin/ffmpeg"
 alias ffprobe="~/ffmpeg/bin/ffprobe"
