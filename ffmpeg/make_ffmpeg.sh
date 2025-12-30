@@ -10,7 +10,7 @@ cd ~/ffmpeg/ffmpeg_sources && \
 wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && \
 tar xjvf ffmpeg-snapshot.tar.bz2 && \
 cd ffmpeg && \
-PATH="$HOME/ffmpeg/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkgconfig" ./configure \
+PATH="$HOME/ffmpeg/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig" ./configure \
   --prefix="$HOME/ffmpeg/ffmpeg_build" \
   --pkg-config-flags="--static" \
   --extra-cflags="-I$HOME/ffmpeg/ffmpeg_build/include" \
@@ -34,7 +34,8 @@ PATH="$HOME/ffmpeg/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkg
   --enable-libx265 \
   --enable-nonfree \
   --enable-shared \
-  --enable-libvmaf && \
+  --enable-libvmaf \
+  --enable-libzimg && \
 PATH="$HOME/ffmpeg/bin:$PATH" make -j$(nproc) && \
 make install
 
