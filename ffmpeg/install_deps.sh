@@ -36,4 +36,7 @@ sudo apt-get update -qq && sudo apt-get -y install \
   nasm \
   libnuma-dev \
   libunistring-dev \
-  libfdk-aac-dev
+  libfdk-aac-dev \
+  libxcb-xinput0 \
+  libxcb-xinerama0 \
+  libxcb-cursor-dev
