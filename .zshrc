@@ -114,7 +114,10 @@ alias e="code"
 alias ff="~/ffmpeg/bin/ffmpeg"
 alias p="~/ffmpeg/bin/ffprobe -hide_banner"
 alias lp="~/ffmpeg/bin/ffprobe -hide_banner -show_format -show_streams"
+alias fp="~/ffmpeg/bin/ffprobe -hide_banner -v error -select_streams v:0 -read_intervals %+#1 -show_packets -show_frames -show_entries side_data"
 alias pl="~/ffmpeg/bin/ffplay -hide_banner"
+alias dv="/usr/bin/dovi_tool"
+alias mm="mkvmerge"
 alias mi="mediainfo"
 alias m="$HOME/mpv/build/mpv"
 alias M="$HOME/mpv/build/mpv --profile=4k"
@@ -127,7 +130,6 @@ export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib${LD_LIBRARY_PATH:+:$LD_LIB
 export PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 
 export VULKAN_VERSION=1.4.335.0
-
 export VULKAN_SDK=~/ffmpeg/vulkan/$VULKAN_VERSION/x86_64
 export PATH=$VULKAN_SDK/bin:$PATH
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
