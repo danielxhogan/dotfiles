@@ -111,32 +111,30 @@ alias f="touch"
 alias d="mkdir"
 alias c="cat"
 alias e="code"
-alias ff="~/ffmpeg/bin/ffmpeg"
-alias p="~/ffmpeg/bin/ffprobe -hide_banner"
-alias lp="~/ffmpeg/bin/ffprobe -hide_banner -show_format -show_streams"
-alias fp="~/ffmpeg/bin/ffprobe -hide_banner -v error -select_streams v:0 -read_intervals %+#1 -show_packets -show_frames -show_entries side_data"
-alias pl="~/ffmpeg/bin/ffplay -hide_banner"
-alias dv="/usr/bin/dovi_tool"
+alias ff="ffmpeg"
+alias p="ffprobe -hide_banner"
+alias lp="p -show_format -show_streams"
+alias fp="p -v error -select_streams v:0 -read_intervals %+#1 -show_packets -show_frames -show_entries side_data"
+alias pl="ffplay -hide_banner"
+alias dv="dovi_tool"
 alias mm="mkvmerge"
 alias mi="mediainfo"
-alias m="$HOME/mpv/build/mpv"
-alias M="$HOME/mpv/build/mpv --profile=4k"
+alias m="mpv"
+alias M="m --profile=4k"
 alias v="vlc"
 alias mb="MP4Box"
 
-export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
+export PATH="$HOME/programs/compiled/install/bin:$PATH"
+export PKG_CONFIG_PATH="$HOME/programs/compiled/install/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig"
+export LD_LIBRARY_PATH="$HOME/programs/compiled/install/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 
-export LD_LIBRARY_PATH="$HOME/ffmpeg/ffmpeg_build/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
-export PKG_CONFIG_PATH="$HOME/ffmpeg/ffmpeg_build/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
-
-export VULKAN_VERSION=1.4.335.0
-export VULKAN_SDK=~/ffmpeg/vulkan/$VULKAN_VERSION/x86_64
-export PATH=$VULKAN_SDK/bin:$PATH
-export LD_LIBRARY_PATH=$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
-export VK_ADD_LAYER_PATH=$VULKAN_SDK/share/vulkan/explicit_layer.d
-export PKG_CONFIG_PATH=$VULKAN_SDK/share/pkgconfig:$VULKAN_SDK/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
+export VULKAN_VERSION="1.4.335.0"
+export VULKAN_SDK="$HOME/programs/prebuilt/vulkan/$VULKAN_VERSION/x86_64"
+export PATH="$VULKAN_SDK/bin:$PATH"
+export LD_LIBRARY_PATH="$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export VK_ADD_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
+export PKG_CONFIG_PATH="$VULKAN_SDK/share/pkgconfig:$VULKAN_SDK/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
