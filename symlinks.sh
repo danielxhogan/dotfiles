@@ -6,6 +6,9 @@ ln -s ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+mkdir -p ~/programs/compiled/src ~/programs/compiled/install
+ln -s ~/dotfiles/build_scripts ~/programs/compiled
+
 ln -s ~/dotfiles/mpv/mpv.conf ~/.config/mpv/mpv.conf
 ln -s ~/dotfiles/mpv/input.conf ~/.config/mpv/input.conf
 mkdir ~/.config/mpv/script-opts
