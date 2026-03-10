@@ -13,6 +13,7 @@ ln -s ~/dotfiles/mpv/mpv.conf ~/.config/mpv/mpv.conf
 ln -s ~/dotfiles/mpv/input.conf ~/.config/mpv/input.conf
 mkdir ~/.config/mpv/script-opts
 ln -s ~/dotfiles/mpv/script-opts/osc.conf ~/.config/mpv/script-opts/osc.conf
+ln -s ~/dotfiles/mpv/scripts/adapt_sub_pos.lua ~/.config/mpv/scripts/adapt_sub_pos.lua
 
 ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
 
