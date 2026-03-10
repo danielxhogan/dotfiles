@@ -8,4 +8,6 @@ function adapt_subtitle_position()
     mp.set_property("sub-pos", 110)
   end
 end
-mp.add_key_binding("del", "string", adapt_subtitle_position)
+mp.add_key_binding("h", "string", adapt_subtitle_position)
+
+mp.set_property("sub-pos", 105)
