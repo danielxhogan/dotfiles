@@ -15,6 +15,7 @@ mkdir ~/.config/mpv/script-opts
 ln -s ~/dotfiles/mpv/script-opts/osc.conf ~/.config/mpv/script-opts/osc.conf
 ln -s ~/dotfiles/mpv/scripts/toggle_osc.lua ~/.config/mpv/scripts/toggle_osc.lua
 ln -s ~/dotfiles/mpv/scripts/show_osc_on_seek.lua ~/.config/mpv/scripts/show_osc_on_seek.lua
+ln -s ~/dotfiles/mpv/scripts/inspect.lua ~/.config/mpv/scripts/inspect.lua
 
 ln -s ~/dotfiles/vscode.json ~/.config/Code/User/settings.json
 
