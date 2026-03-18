@@ -1,7 +1,7 @@
 {
   "workbench.colorTheme": "suh",
   "editor.bracketPairColorization.enabled": false,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.lineNumbers": "relative",
   "editor.cursorSurroundingLines": 10,
   "editor.cursorBlinking": "solid",
@@ -111,7 +111,7 @@
   },
 
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
