@@ -6,8 +6,8 @@ INSTALL="$HOME/programs/compiled/install"
 
 # get source repo
 # ***************
-cd $SRC && \
-git clone https://gitlab.freedesktop.org/pipewire/pipewire.git
+# cd $SRC && \
+# git clone https://gitlab.freedesktop.org/pipewire/pipewire.git
 
 echo "\n\n \
   ******************* \n \

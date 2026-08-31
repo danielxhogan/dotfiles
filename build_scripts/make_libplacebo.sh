@@ -6,10 +6,10 @@ INSTALL="$HOME/programs/compiled/install"
 
 # get source repo
 # ***************
-cd $SRC && \
-git clone --recursive https://code.videolan.org/danielxhogan/libplacebo.git && \
-cd libplacebo && \
-git remote add upstream https://code.videolan.org/videolan/libplacebo.git
+# cd $SRC && \
+# git clone --recursive https://code.videolan.org/danielxhogan/libplacebo.git && \
+# cd libplacebo && \
+# git remote add upstream https://code.videolan.org/videolan/libplacebo.git
 
 # install dependencies
 # ********************

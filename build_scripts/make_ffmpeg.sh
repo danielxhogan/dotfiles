@@ -7,8 +7,8 @@ INSTALL="$HOME/programs/compiled/install"
 
 # get source repo
 # ***************
-cd $SRC && \
-git clone https://code.ffmpeg.org/FFmpeg/FFmpeg.git
+# cd $SRC && \
+# git clone https://code.ffmpeg.org/FFmpeg/FFmpeg.git
 
 # echo "\n\n \
 #   *************************** \n \

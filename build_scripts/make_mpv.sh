@@ -6,10 +6,10 @@ INSTALL="$HOME/programs/compiled/install"
 
 # get source repo
 # ***************
-cd $SRC && \
-git clone https://github.com/danielxhogan/mpv.git && \
-cd mpv && \
-git remote add upstream https://github.com/mpv-player/mpv.git
+# cd $SRC && \
+# git clone https://github.com/danielxhogan/mpv.git && \
+# cd mpv && \
+# git remote add upstream https://github.com/mpv-player/mpv.git
 
 # install dependencies
 # ********************

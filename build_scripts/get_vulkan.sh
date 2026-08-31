@@ -9,7 +9,7 @@ echo "\n\n \
   **************** \n" && \
 \
 cd $PREBUILT && \
-mkdir vulkan && \
+d -p vulkan && \
 cd vulkan && \
 wget https://sdk.lunarg.com/sdk/download/$VULKAN_VERSION/linux/vulkansdk-linux-x86_64-$VULKAN_VERSION.tar.xz && \
 tar -xf vulkansdk-linux-x86_64-$VULKAN_VERSION.tar.xz && \
