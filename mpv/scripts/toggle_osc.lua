@@ -1,6 +1,8 @@
-local timer = nil
 local no_osc_sub_pos
 local visibility = mp.get_property("osc")
+
+local options = mp.get_property_native("script-opts")
+local timer = nil
 
 mp.add_timeout(0.1, function ()
   no_osc_sub_pos = mp.get_property("sub-pos")
@@ -18,6 +20,10 @@ mp.add_timeout(0.1, function ()
 end)
 
 function show_osc_on_seek()
+  if options["show-osc-on-seek"] == "no" then
+    return
+  end
+
   if timer then
     timer:kill()
     timer = nil
